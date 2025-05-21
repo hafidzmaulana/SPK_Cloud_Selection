@@ -25,8 +25,8 @@ Ini adalah aplikasi web Sistem Pendukung Keputusan (SPK) untuk membantu memilih 
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/username/nama-repo.git
-cd nama-repo
+git clone https://github.com/hafidzmaulana/SPK_Cloud_Selection.git
+cd SPK_Cloud_Selection
 ```
 
 ### 2. Install Dependency
