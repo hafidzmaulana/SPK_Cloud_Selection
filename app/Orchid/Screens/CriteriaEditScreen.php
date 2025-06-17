@@ -52,13 +52,14 @@ class CriteriaEditScreen extends Screen
                     ->required(),
 
                 Input::make('criteria.weight')
-                    ->title('Bobot (%)')
+                    ->title('Bobot')
                     ->type('number')
+                    ->step(0.01) // Allows decimal input
                     ->min(0)
-                    ->max(100)
-                    ->step(1)
+                    ->max(1)
                     ->required()
-                    ->help('Masukkan nilai bobot antara 0 sampai 100'),
+                    ->placeholder('Masukkan bobot (0.01-1.00)')
+                    ->help('Masukkan nilai desimal antara 0 dan 1, contoh: 0.15'),
             ]),
         ];
     }

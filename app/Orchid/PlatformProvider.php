@@ -37,12 +37,12 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Kriteria')->icon('list')->route('platform.criteria'),
             Menu::make('Alternatif')->icon('layers')->route('platform.alternatives'),
             Menu::make('Nilai Alternatif')->icon('bs.card-text')->route('platform.values'),
-            /*Menu::make('Proses SAW')->icon('calculator')->route('platform.saw'),*/
+            Menu::make('Proses SAW')->icon('calculator')->route('platform.saw'),
             
-            Menu::make('Get Started')
+            /*Menu::make('Get Started')
                 ->icon('bs.book')
                 ->title('Navigation')
-                ->route(config('platform.index')),
+                ->route(config('platform.index')),*/
 
             /*Menu::make('Sample Screen')
                 ->icon('bs.collection')
@@ -69,9 +69,9 @@ class PlatformProvider extends OrchidServiceProvider
             Menu::make('Cards')
                 ->icon('bs.card-text')
                 ->route('platform.example.cards')
-                ->divider(),
+                ->divider(),*/
 
-            Menu::make(__('Users'))
+            /*Menu::make(__('Users'))
                 ->icon('bs.people')
                 ->route('platform.systems.users')
                 ->permission('platform.systems.users')
@@ -81,9 +81,9 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('bs.shield')
                 ->route('platform.systems.roles')
                 ->permission('platform.systems.roles')
-                ->divider(),
+                ->divider(),*/
 
-            Menu::make('Documentation')
+            /*Menu::make('Documentation')
                 ->title('Docs')
                 ->icon('bs.box-arrow-up-right')
                 ->url('https://orchid.software/en/docs')

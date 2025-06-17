@@ -24,7 +24,7 @@ class PlatformScreen extends Screen
      */
     public function name(): ?string
     {
-        return 'Get Started';
+        return 'Sistem Pendukung Keputusan - SAW';
     }
 
     /**
@@ -32,17 +32,7 @@ class PlatformScreen extends Screen
      */
     public function description(): ?string
     {
-        return 'Welcome to your Orchid application.';
-    }
-
-    /**
-     * The screen's action buttons.
-     *
-     * @return \Orchid\Screen\Action[]
-     */
-    public function commandBar(): iterable
-    {
-        return [];
+        return 'Panduan penggunaan sistem metode Simple Additive Weighting';
     }
 
     /**
@@ -53,8 +43,7 @@ class PlatformScreen extends Screen
     public function layout(): iterable
     {
         return [
-            Layout::view('platform::partials.update-assets'),
-            Layout::view('platform::partials.welcome'),
+            Layout::view('platform.how-to-use-saw'),
         ];
     }
 }
